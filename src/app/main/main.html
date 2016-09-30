@@ -14,4 +14,15 @@
         </div>
     </div>
 
+    <div class="panel panel-default">
+        <div class="panel-heading">Messages</div>
+        <div class="panel-body">
+            <div class="input-group">
+                <li class="list-group-item" ng-repeat="message in main.messages">
+                    {{message.msg}}
+                </li>
+            </div>
+        </div>
+    </div>
+
 </div>
