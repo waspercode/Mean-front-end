@@ -8,7 +8,7 @@ export class MainController {
   }
     getMessages() {
       var vm = this;
-        this.$http.post('http://localhost:5000/api/message').then(function(result){
+        this.$http.get('http://localhost:5000/api/message').then(function(result){
             vm.message = result.data;
         });
     }
